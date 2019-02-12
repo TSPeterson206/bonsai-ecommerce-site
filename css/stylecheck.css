@@ -12,6 +12,8 @@ header {
   
 footer {
     color: #6A726A;
+    background-color: white;
+    min-width: 100%
 }
 
 /* BILLING SHIPPING AND CREDIT FORMS */
@@ -69,7 +71,7 @@ footer {
 }
 .item {
     height: 35%;
-    width: 135%;
+    width: 90%;
 }
 /* ITEMS FORM */
 .itemsForm {

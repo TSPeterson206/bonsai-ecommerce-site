@@ -45,19 +45,3 @@ else if (window.location.pathname === '/products.html') {
 else if (window.location.pathname === '/checkout.html') {
     scriptcheck.checkoutFunction()
 }
-
-function validate() {
-    const email = document.querySelector('.email').value
-    const subscribeBtn = document.querySelector('.subscribebtn')
-  
-    if (formatted(email)) {
-      subscribeBtn.disabled = false
-    } else {
-      subscribeBtn.disabled = true
-    }
-  }
-  
-  function formatted(email) {
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email)
-  }
